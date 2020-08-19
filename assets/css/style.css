@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+/*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;;
+    margin-top: 80px;
+}
+
+
+/*MENU*/
+
+/*Lista*/
+nav ul{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/*Logo*/
+#imgLogo{
+    width: 160px;
+    height: 80px;
+    margin-right: 450px;
+}
+
+/*Formatação dos links*/
+nav a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;;
+    color:white;
+    font-size: 15px;
+}
+nav ul li{
+    list-style: none;
+    justify-items: center;
+}
+nav a:hover{
+    color:#3B93C6;
+ }
+
+/*Formatação geral da barra de navegação*/
+nav{
+    width:100%;
+    background-color:#0074b9;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/*SEÇÃO - SOBRE A GENERATION*/
+
+#titulo{
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+#texto{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 15px;
+}
+#containerSobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*SEÇÃO - SOBRE O CURSO*/
+#imgCurso{
+    width: 250px;
+    height: 250px;
+}
+#containerCurso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#textoCurso{
+    padding-bottom: 50px;
+}
+
+/*SEÇÃO - CURRÍCULO DO CURSO*/
+#containerCL{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#containerCL div{
+    border-style: groove;
+    border-color: #db6247;
+    padding: 50px;
+}
+
+#containerCL ul{
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#tituloCL{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color:#d45f68;
+    margin-bottom: 25px;
+}
+/*SEÇÃO - MERCADO DE TRABALHO*/
+#containerTrab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#textoTrab{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 15px;
+}
+
+#imgTrab{
+    height: 350px;
+    width: 500px;
+}
+/*SEÇÃO - INSCRIÇÃO*/
+
+#inscricao div.linha1{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+#inscricao div.linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+#inscricao{
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+/*#botao{
+    align-items: center;
+    justify-content: center;
+}*/
