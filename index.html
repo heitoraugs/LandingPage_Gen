@@ -77,6 +77,7 @@
         <h1 id='titulo'>Currículo do curso</h1>
 
         <div id='containerCL'>
+            
             <div>
                 <h3 id='tituloCL'>Bloco I</h3>
                 <ul>
@@ -141,17 +142,20 @@
 
     <section id='inscricao'>
         <h1 id='titulo'>Inscrição</h1>
+
         <form>
             <div class='linha1'>
                 <label for="nome">Nome Completo</label>
-                <input type="text" id='nome'>
+                <input type="text" id='nome' onkeyup="validaNome()">
+                <div id='txtNome'></div>
             </div>
 
             <div class="linha1">
                 <label for="email">E-mail</label>
-                <input type="email" id='email'>
+                <input type="email" id='email' onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
             </div>
-
+                
             <div class='linha2'>
                 <label for="dataNasc">Data de Nascimento</label>
                 <input type="date" id='dataNasc'>
@@ -190,15 +194,17 @@
 
             <div class="linha1">
                 <label for="texto">Como você conheceu a Generation?</label>
-                <input type="text" id='texto'>
+                <textarea name="texto" id="textoGen" onkeyup="validaTexto()" cols="30" rows="10"></textarea>
+                <div id='txtTextoGen'></div>
             </div>
 
-            <div  id='botao'>
-                <button>Enviar</button>
+            <div id='botao'>
+                <button onclick="enviar()">Enviar</button>
             </div>
         </form>
     </section>
 
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

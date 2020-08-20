@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-color: #E5E5E5;
+}
 h1{
     font-family: 'Roboto', sans-serif;;
     margin-top: 80px;
@@ -13,37 +15,6 @@ h1{
 
 
 /*MENU*/
-
-/*Lista*/
-nav ul{
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-/*Logo*/
-#imgLogo{
-    width: 160px;
-    height: 80px;
-    margin-right: 450px;
-}
-
-/*Formatação dos links*/
-nav a{
-    text-decoration: none;
-    padding: 10px 20px;
-    font-family: 'Roboto', sans-serif;;
-    color:white;
-    font-size: 15px;
-}
-nav ul li{
-    list-style: none;
-    justify-items: center;
-}
-nav a:hover{
-    color:#3B93C6;
- }
 
 /*Formatação geral da barra de navegação*/
 nav{
@@ -53,6 +24,41 @@ nav{
     top: 0;
     z-index: 100;
 }
+
+/*Lista*/
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding:0;
+    overflow: hidden;
+}
+nav ul li{
+   
+} 
+
+/*Formatação dos links*/
+nav a{
+    text-align:start;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-family: 'Roboto', sans-serif;;
+    color:white;
+    font-size: 15px;
+    display: block;
+}
+
+nav li a:hover{
+    color:#B0BFD4;
+ }
+
+/*Logo*/
+#imgLogo{
+    width: 150px;
+    height: 60px;
+    margin-right: 450px;
+}
+
 
 /*SEÇÃO - SOBRE A GENERATION*/
 
@@ -95,13 +101,17 @@ nav{
 #containerCL{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
 }
 #containerCL div{
     border-style: groove;
-    border-color: #db6247;
-    padding: 50px;
+    padding:50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: white;
 }
 
 #containerCL ul{
@@ -135,7 +145,53 @@ nav{
     width: 500px;
 }
 /*SEÇÃO - INSCRIÇÃO*/
-
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:#D45F68;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:#D45F68;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  input[type=date]{
+    padding: 10px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:#D45F68;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  #estado{
+    padding: 10px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:#D45F68;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+#textoGen{
+    padding: 10px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color:#D45F68;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
 #inscricao div.linha1{
     display: flex;
     flex-direction: column;
@@ -152,7 +208,28 @@ nav{
     margin-left: 400px;
     margin-bottom: 50px;
 }
-/*#botao{
-    align-items: center;
+.linha1{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 15px;
+}
+.linha2{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 15px;
+}
+
+button{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #63A138;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius:5px;
+}
+#botao{
+    display: flex;
     justify-content: center;
-}*/
+}
